@@ -10,6 +10,6 @@ In this lesson, we learn:
   - Project Structure Walkthrough
   - Running the Application
   - Using Images
-  - 16. Using Stylesheets
+  - Using Stylesheets
 
 Thank !

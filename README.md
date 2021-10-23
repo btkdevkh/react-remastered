@@ -2,14 +2,17 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Lesson 3 / Intro to State & useState
+## Lesson 4 / Components & Props
 
 In this lesson, we learn:
 
-  - Using the useSate Hook
-  - Outputting Lists
-  - Using the Previous State
-  - Conditional Templates
-  - useState Limitations
+  - Using Mutiple Components
+  - Creating a Title Component
+  - Intro to Props
+  - React Fragments
+  - Children Props
+  - Functions as Props
+  - Portals
+  - Class Components Overview
 
 Thank !

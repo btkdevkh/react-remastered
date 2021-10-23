@@ -11,7 +11,7 @@ export default function TechList({ techs, handleDelete }) {
             key={tech.id}
             onClick={() => handleDelete(tech.id)}
           >
-            {tech.techno.toUpperCase()}
+            {tech.techno.toUpperCase()} - {tech.date} - {tech.location}
           </li>
         ))}
       </ul>

@@ -5,6 +5,7 @@ import TechList from './components/TechList';
 import logo from './assets/img/logo.svg';
 import './assets/css/App.css';
 import Clock from './components/Clock';
+import TechForm from './components/TechForm';
 
 function App() {
   // Using the useSate Hook
@@ -12,12 +13,9 @@ function App() {
   const [showTechs, setShowTechs] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [techs, setTechs] = useState([
-    { id: 1, techno: "html" },
-    { id: 2, techno: "css" },
-    { id: 3, techno: "javascript" },
-    { id: 4, techno: "react" },
-    { id: 6, techno: "Node" },
-    { id: 7, techno: "php" },
+    { id: 1, techno: "html", date: new Date().toLocaleDateString() },
+    { id: 2, techno: "css", date: new Date().toLocaleDateString() },
+    { id: 3, techno: "javascript", date: new Date().toLocaleDateString() }
   ]);
 
   const handleClick = () => name === 'jim007' ? setName('Bunthoeun') : setName('jim007');
@@ -28,6 +26,12 @@ function App() {
   const handleDelete = (id) => {
     setTechs((oldState) => oldState.filter(x => x.id !== id));
   };
+
+  // Add Techno
+  const addTech = (tech) => {
+    setTechs((oldState) => [...oldState, tech]);
+    setShowModal(false);
+  }
 
   /* 
     useState hook Limitations
@@ -56,8 +60,8 @@ function App() {
       {/* Childrens & Portal */}
       {showModal && (
         <Modal handleCloseModal={handleCloseModal} isSalesModal={true}>
-          <h2>50% promo</h2>
-          <p>promo code GHGH50</p>
+          <h2>Add Techno</h2>
+          <TechForm addTech={addTech} setShowModal={setShowModal} />
         </Modal>
       )}
       {/* <Modal>

@@ -13,7 +13,7 @@ function App() {
     { id: 4, techno: "php" },
   ]);
 
-  const handleClick = () => name === '007' ? setName('Bunthoeun') : setName('007');
+  const handleClick = () => name === 'jim007' ? setName('Bunthoeun') : setName('jim007');
   const handleShow = () => setShowTechs((oldState) => !oldState);
 
   // Using the Previous State
@@ -22,7 +22,7 @@ function App() {
   };
 
   /* 
-    useState Limitations
+    useState hook Limitations
     Always use react hook within the component itself not outside the component
     React Hooks is not allowed to use in the function except the custom hooks
   */
@@ -35,7 +35,7 @@ function App() {
 
       <div>
         <h1>My name is {name}</h1>
-        <button onClick={handleClick}>{name === '007' ? 'Hide my nickname' : 'See my nickname'}</button><br />
+        <button onClick={handleClick}>{name === 'jim007' ? 'Hide my nickname' : 'See my nickname'}</button><br />
         <button onClick={handleShow}>{!showTechs ? 'See my skills' : 'Hide my skills'}</button>
         <h3>My technical skills are</h3>
 

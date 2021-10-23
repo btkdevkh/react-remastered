@@ -1,20 +1,28 @@
 import { useState } from 'react';
+import Title from './components/Title';
+import Modal from './components/Modal';
+import TechList from './components/TechList';
 import logo from './assets/img/logo.svg';
 import './assets/css/App.css';
+import Clock from './components/Clock';
 
 function App() {
   // Using the useSate Hook
   const [name, setName] = useState('Bunthoeun');
   const [showTechs, setShowTechs] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const [techs, setTechs] = useState([
     { id: 1, techno: "html" },
     { id: 2, techno: "css" },
     { id: 3, techno: "javascript" },
-    { id: 4, techno: "php" },
+    { id: 4, techno: "react" },
+    { id: 6, techno: "Node" },
+    { id: 7, techno: "php" },
   ]);
 
   const handleClick = () => name === 'jim007' ? setName('Bunthoeun') : setName('jim007');
   const handleShow = () => setShowTechs((oldState) => !oldState);
+  const handleCloseModal = () => setShowModal(oldState => !oldState);
 
   // Using the Previous State
   const handleDelete = (id) => {
@@ -33,27 +41,32 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
 
+      {/* Nested Component & Passing Props */}
+      <Title title="React World" />
       <div>
-        <h1>My name is {name}</h1>
+        <h2>My name is {name} <br />I'm react developer</h2>
         <button onClick={handleClick}>{name === 'jim007' ? 'Hide my nickname' : 'See my nickname'}</button><br />
-        <button onClick={handleShow}>{!showTechs ? 'See my skills' : 'Hide my skills'}</button>
-        <h3>My technical skills are</h3>
+        <button onClick={handleShow}>{!showTechs ? 'See my techs skills' : 'Hide my techs skills'}</button><br />
+        <button onClick={handleCloseModal}>See promotion</button>
 
         {/* Conditional Templates */}
-        {showTechs && (
-          <ul>
-            {/* Outputting Lists */}
-            {techs.map(tech => (
-              <li 
-                key={tech.id}
-                onClick={() => handleDelete(tech.id)}
-              >
-                {tech.techno.toUpperCase()}
-              </li>
-            ))}
-          </ul>
-        )}
+        {showTechs && <TechList techs={techs} handleDelete={handleDelete} />}
       </div>
+
+      {/* Childrens & Portal */}
+      {showModal && (
+        <Modal handleCloseModal={handleCloseModal}>
+          <h2>50% promo</h2>
+          <p>promo code GHGH50</p>
+        </Modal>
+      )}
+      {/* <Modal>
+        <input placeholder="News letter" />
+        <input type="submit" value="submit" />
+      </Modal> */}
+
+      {/* Example of class component */}
+      <Clock />
     </div>
   );
 }

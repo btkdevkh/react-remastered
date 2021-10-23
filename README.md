@@ -2,14 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Lesson 3 / Intro to State & useState
+## Lesson 1 / React Basics
 
 In this lesson, we learn:
 
-  - Using the useSate Hook
-  - Outputting Lists
-  - Using the Previous State
-  - Conditional Templates
-  - useState Limitations
+  - Using React with a CDN
+  - Making a React Component
+  - JSX & Templates
+  - Template Expression & Variables
+  - Click Events & Event Handlers
 
 Thank !

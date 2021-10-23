@@ -2,14 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Lesson 1 / React Basics
+## Lesson 2 / Using Create React App CLI
 
 In this lesson, we learn:
 
-  - Using React with a CDN
-  - Making a React Component
-  - JSX & Templates
-  - Template Expression & Variables
-  - Click Events & Event Handlers
+  - Making a React Site (create-react-app)
+  - Project Structure Walkthrough
+  - Running the Application
+  - Using Images
+  - Using Stylesheets
 
 Thank !

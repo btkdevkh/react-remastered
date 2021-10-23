@@ -55,7 +55,7 @@ function App() {
 
       {/* Childrens & Portal */}
       {showModal && (
-        <Modal handleCloseModal={handleCloseModal}>
+        <Modal handleCloseModal={handleCloseModal} isSalesModal={true}>
           <h2>50% promo</h2>
           <p>promo code GHGH50</p>
         </Modal>

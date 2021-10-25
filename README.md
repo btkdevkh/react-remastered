@@ -2,18 +2,19 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Lesson 7 / Fetching Data & useEffect
+## Lesson 8 / The React Router
 
 In this lesson, we learn:
 
-  - New Project & JSON Server
-  - Fetching Data with useEffect
-  - The useEffect Dependency Array
-  - useCallback for Function Dependencies
-  - Creating a Custom Fetch Hook
-  - Adding a Loading/Pending State
-  - Handling Errors
-  - Cleanup Function
-  - Aborting Fetch Requests
+  - Muti-Pages React Sites
+  - React Router Setup
+  - Switch & Exact Match
+  - Links & Nav Links
+  - Fetching Data
+  - Route Parameters
+  - The userParams Hook
+  - Programmatic Redirects
+  - Redirects Component
+  - Query Parameters
 
 Thank !

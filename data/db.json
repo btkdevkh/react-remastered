@@ -1,22 +1,22 @@
 {
-  "trips": [
+  "articles": [
     { 
       "id": 1,
-      "title": "2 Night at Paris, Effel Tour at night", 
-      "price": "€200",
-      "location": "europe"
+      "title": "Hi, Welcome to the site", 
+      "author": "Jim",
+      "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
     },
     { 
       "id": 2,
-      "title": "3 Night at Phnom Penh, See the city", 
-      "price": "€150",
-      "location": "asia"
+      "title": "Learn html, css, javascript", 
+      "author": "Jimmy",
+      "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
     },
     { 
       "id": 3,
-      "title": "4 Night at Puket, Market at night", 
-      "price": "€150",
-      "location": "asia"
+      "title": "Learn React", 
+      "author": "Bella",
+      "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
     }
   ]
 }

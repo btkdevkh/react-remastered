@@ -1,22 +1,18 @@
-import { BrowserRouter, Switch, Route, NavLink, Redirect } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import About from './pages/About';
 import Article from './pages/Article';
+import Navbar from './components/Navbar';
+import ThemeSelector from './components/ThemeSelector';
 import './assets/css/App.css';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <header className="App-header">
-          <nav>
-            <h1>My Articles</h1>
-            <NavLink exact to="/">Home</NavLink>
-            <NavLink to="/contact">Contact</NavLink>
-            <NavLink to="/about">About</NavLink>
-          </nav>
-        </header>
+        <Navbar />
+        <ThemeSelector />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/contact" component={Contact} />

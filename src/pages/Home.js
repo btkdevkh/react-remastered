@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom';
 export default function Home() {
   const { datas: articles, isPending, error } = useFetch("http://localhost:8000/articles");
 
-  console.log(articles);
-
   return (
     <div>
       <h2>Articles</h2>

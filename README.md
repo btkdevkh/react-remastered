@@ -2,19 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Lesson 8 / The React Router
+## Lesson 9 / React Context & Reducers
 
 In this lesson, we learn:
 
-  - Muti-Pages React Sites
-  - React Router Setup
-  - Switch & Exact Match
-  - Links & Nav Links
-  - Fetching Data
-  - Route Parameters
-  - The userParams Hook
-  - Programmatic Redirects
-  - Redirects Component
-  - Query Parameters
+  - Prop Drilling inconvenience
+  - Creating a Context & Provider
+  - Accessing Context Values
+  - Creating a Custom Context Hook
+  - Reducers & useReducer
+  - Making a Color Theme Selector
 
 Thank !
